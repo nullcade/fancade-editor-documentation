@@ -80,3 +80,62 @@ Definition:
 in the chunks tab, you will see a list containing all chunks and a "New Chunk" button, and a fingerprint button which will copy the chunk UUID
 
 after selecting a chunk, or creating a new one by selecting "New Chunk", you can start editing the chunk.
+
+there are multiple inputs when editing a chunk:
+
+### Type
+
+the first selector is type which you can select from one of:
+
+1. Solid Block
+2. Physics Block
+3. Script Block
+4. Level
+
+### Name
+
+which specifies the name of the chunk, this can be the level name or the block name.
+
+### Lock
+
+Locking or Unlocking a chunk from being edited
+
+### Collider
+
+if the type is a block, you can set a collider which can be one of:
+
+1. Passthrough
+2. Box
+3. Sphear
+
+### Offset
+
+> every chunk can have 8x8x8 voxels, which is the same size as a 1x1x1 block.  
+> to create a block bigger than 1x1x1, you will need attach multiple chunks together.  
+> this is where child chunks and Offset (the place of the chunk inside the block) come in play!
+
+Offset can be from 0 to 3 in each axis.  
+
+> [!TIP]
+> Fancade allows any block shape in a 4x4x4 max size, which means sometimes you won't be having an x0 y0 z0 chunk, so you aren't forced to use Offset x0 y0 z0 on the parent chunk. don't worry about it...
+
+### Blocks (Not implemented yet)
+
+used to edit the blocks of a chunk
+
+> [!NOTE]
+> I couldn't find a good UI design to show the placed blocks in a chunk and place/break them.  
+> if you have any ideas on this, please let me know.
+
+### Faces (Voxels)
+
+used to edit the faces of each chunk (block). the way it's used is going to be explained later
+
+### Wires (Not implemented yet)
+
+used to edit the wires of a chunk
+
+> [!NOTE]
+> just like the blocks, I couldn't find a good UI design to show the connected wires in a chunk and add or remove them.  
+> if you have any ideas on this, please let me know.
+
