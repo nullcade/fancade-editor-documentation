@@ -9,6 +9,9 @@ this editor is not a replacement to the original built-in editor in fancade, but
 > [!WARNING]
 > this project may result in your ban if used in the wrong way (or the right way). please make sure that your game is stable enough before publishing it.
 
+> [!NOTE]
+> this project is under a proprietary license and it's closed source, but we hope that we make it open source (under GPLv3), or at least "source available" (if there is any legal conflicts)
+
 # The Editor
 
 the editor has 3 tabs with different purposes which are:
