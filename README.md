@@ -68,3 +68,15 @@ the **Save** button will save the game and show it in the list bellow it
 Once a game is added, it can be removed by using the trash icon button next to it.
 
 there is also a **New Game** button which will replace the current game with an empty game and will fill up the **Title**, **Author** and **Description**.
+
+## Chunks
+
+Definition:
+> each fancade game is split into 2 parts, header (which contains the game info) and chunks  
+> each chunk can be either a level, or a block  
+> a chunk can contain block data, face (voxel) data and wire data  
+> each chunk can have **child** chunks which corresponds to their **parent** chunk  
+
+in the chunks tab, you will see a list containing all chunks and a "New Chunk" button, and a fingerprint button which will copy the chunk UUID
+
+after selecting a chunk, or creating a new one by selecting "New Chunk", you can start editing the chunk.
