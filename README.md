@@ -160,3 +160,48 @@ each child chunk can have **Offset** and **Faces**.
 > child chunks can store much more data than what is used by fancade, but these data still aren't available to be edited by the editor yet (name, blocks, wires, etc.)  
 > same thing applies to the parent id of each chunk (each chunk can only be identified as a child if it has a parent id other than it's own id). it's not available to be edited as it have conflict with the way the editor works.  
 > hopefully we soon will figure out a way to make this available too
+
+## Script
+
+this is the most exciting part of fancade editor to me!
+
+this tab does something that have been requested many times to be added to fancade: Scripting
+
+by using this tab, you can use TypeScript to code your game inside of a single script block!
+
+this tab has 4 elements:
+
+### Save button
+
+Saves the code inside of the browser
+
+### P button
+
+Prettier, to make your code look pretty!
+
+### Build button
+
+turns your code into a script block, usable in Fancade
+
+### Code Editor
+
+a place to write your code, just like you do in vscode.
+
+in this place, all the magic happens!
+
+the code you're going to write is going to be just like how you connect the blocks in fancade. each script block has a function specified to it, and wires can be stored in variables.
+
+when building the code, all the blocks specified in the code will be placed in the shape of a tower inside of a script block.
+
+> [!TIP]
+> playSound is buggy in the web version of fancade, using it deep in the code will make it go up in the script block, and those it becomes laggy.  
+> please use playSound near the top of the script to make it work for web version
+
+> [!NOTE]
+> the scripting feature still doesn't have the ability to make input/output wires on a block, true functions (there are inline functions which just copies that part of code) or multiple script files.
+
+> [!NOTE]
+> the documentation of the typescript is going to be released later
+
+> [!TIP]
+> you can use the code suggestions until the documentation is released for scripting
