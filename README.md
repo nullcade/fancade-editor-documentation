@@ -139,3 +139,24 @@ used to edit the wires of a chunk
 > just like the blocks, I couldn't find a good UI design to show the connected wires in a chunk and add or remove them.  
 > if you have any ideas on this, please let me know.
 
+### Limit input size
+
+Fancade limits chunks name to 16 characters, but since we're working with raw data, we can remove the limit and add 256 characters long name to a chunk.
+
+just disable this to get longer names
+
+### Child Chunks
+
+as mentioned, each chunk can have child chunks, and here you can add and remove them.
+
+Child chunks have many similarities to parent chunks. some difference are that child chunks can't have children, and they have the same type and collider as the parent, and even tho they could have blocks and wires inside, they aren't going to be visible...
+
+each child chunk can have **Offset** and **Faces**.
+
+> [!NOTE]
+> Blocks and Wires doesn't seem to be stored in child chunks, this was found after a recent research. the editor still going to contain these buttons until it's proven to be right
+
+> [!NOTE]
+> child chunks can store much more data than what is used by fancade, but these data still aren't available to be edited by the editor yet (name, blocks, wires, etc.)  
+> same thing applies to the parent id of each chunk (each chunk can only be identified as a child if it has a parent id other than it's own id). it's not available to be edited as it have conflict with the way the editor works.  
+> hopefully we soon will figure out a way to make this available too
